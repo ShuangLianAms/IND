@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul li{
+  list-style-type: none;
+}
+.logo{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  display: block;
+}
+header{
+  display: flex;
+  align-items: center;
+  background: #424f63;
+  padding: 10px;
+}
+nav{
+  flex: 1;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+nav a{
+  margin-right: 30px;
+  color: #fff;
+}
+nav a:hover{
+  /* color: #fff; */
+  color: #65cea7;
+}
+main.main1box{
+  /* background: #65cea7; */
+  background: #424f63;;
+  display: flex;
+  padding: 20px;
+  margin-top: 10px;
+  height: 86vh;
+}
+main.main1box .menu{
+  height: 40vh;
+  background-color: #efeefe;
+  margin-bottom: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 6px;
+}
+main.main1box aside{
+  width: 300px;
+  margin-right: 30px;
+}
+main.main1box .des{
+  background-color: #efeefe;
+  height: 40vh;
+  padding: 20px;
+  overflow-y: scroll;
+  border-radius: 6px;
+}
+main.main1box .description{
+  background-color: #efeefe;
+  padding: 20px;
+  height: 12vh;
+  border-radius: 6px;
+  color: #7266ba;
+}
+main.main1box .mainright{
+  flex: 1;
+}
+.main1box .main1{
+  background-color: #efeefe;
+  padding: 20px;
+  height: 67vh;
+  margin-top: 2vh;
+  overflow-y: hidden;
+  border-radius: 6px;
+}
+.main1box select,input{
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.main1box .main2{
+  text-align: center;
+}
+.main1box .mcontent{
+  height:54vh;
+  overflow-y: scroll;
+}
+.main1box .main2 h2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: normal;
+  font-size: 18px;
+}
+.main1box .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.main1box .btn a{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  background: #7266ba;
+  border-radius: 6px;
+  color: #fff;
+}
+.main1box .box3 .ch{
+	width: 80px;
+	margin: 0 20px;
+}
+.main1box .box3 h2{
+	margin-top: 8px;
+	margin-bottom: 8px
+}
+.navMenuBox {   
+    overflow: auto;
+}
+
+/*去掉默认样式*/
+.navMenuBox ul,
+.navMenuBox li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navMenu>li>a {
+    display: block;
+    line-height: 40px;
+    font-size: 17px;
+    text-decoration: none;
+    border-bottom: 1px dashed #999;
+}
+
+
+.subMenu>li.active>a,
+.subMenu>li>a:hover {
+    color: #FFF;
+    background: #999;
+}
+
+.subMenu>li>a {
+    display: block;
+    line-height: 36px;
+    font-size: 16px;
+    text-decoration: none;
+/*    color: #ABB1B7;*/
+}
+
+ul.subMenu {
+    margin-top: 8px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.subMenu>li>a {
+    padding-left: 20px;
+}
+.navMenu i{
+    font-style: normal;
+    margin-left: 5px;
+}
+.main1box .box{
+	display: none;
+}
+.main1box .hide{
+	display: none;
+}
+.main1box #select1{
+  height: auto;
+  line-height: 1.8;
+  height: 200px;
+}
+.main1box #select1 option,#select3 option{
+  padding: 5px 10px;
+}
+.main1box .result li{
+  margin-top: 5px;
+  border-bottom: 1px dashed #999;
+  padding-bottom: 6px;
+}
+.main1box .jia{
+  font-size: 40px;
+  cursor: pointer;
+}
+.mb0{
+  margin-bottom: 0 !important;
+}
+.main1box .role input{
+  width: 110px;
+}
+.main1box .jia-role input{
+  margin-left: 5px;
+}
+/* add */
+.main2box{
+  background: #424f63;
+  padding: 20px;
+  margin-top: 10px;
+  height: 86vh;
+}
+.topbox{
+  display: flex;
+  justify-content: space-between;
+  height: 64%;
+  box-sizing: border-box;
+}
+.botbox{
+  height: 35%;
+  box-sizing: border-box;
+  background-color: #efeefe;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.topbox .section1{
+  flex: 1;
+  background-color: #efeefe;
+  margin-right: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.topbox .aside1{
+  width: 200px;
+  height: 100%;
+  background-color: #efeefe;
+  margin-right: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow-y: auto;
+}
+.topbox .aside1 h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.topbox .aside1 li{
+  cursor: pointer;
+}
+.topbox .aside1 h4{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.topbox .aside1 .add{
+  cursor: pointer;
+}
+.topbox .aside2{
+  width: 150px;
+  background-color: #efeefe;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.topbox .aside2 li{
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.topbox .top1{
+  height: 90%;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+.topbox .top1 .left1{
+  flex: 1;
+}
+.topbox .top1 .right1{
+  width: 200px;
+}
+.topbox .top1 .right1 button{
+  padding: 3px 10px;
+}
+.topbox .top1 .right1 .box1{
+  display: none;
+}
+.topbox .top1 .right1 .box1{
+  background-color: #efeefe;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.topbox .top1 .right1 .box1 p{
+  margin-bottom: 3px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.topbox .top1 .right1 input{
+  width: 100%;
+  outline: none;
+  height: 30px;
+  padding-left: 10px;
+}
+.topbox .top1 .right1 textarea{
+  width: 100%;
+  border: none;
+  height: 40px;
+  resize: none;
+  outline: none;
+  padding-left: 10px;
+}
+.botbox .left2{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 1.8;
+  margin-right: 10px;
+  border-right: 2px solid #000;
+}
+.botbox .right2{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 1.8;
+  margin-right: 10px;
+  overflow-y: auto;
+}
+.dialog{
+  position: relative;
+  display: none;
+  width: 500px;
+  height: 500px;
+  max-height: 80%;
+  word-wrap: break-word;
+  overflow-y: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  border-radius: 8px;
+  background-color: #efeefe;
+  border:10px solid #7266ba;
+  top: 10%;
+  padding: 20px;
+}
+.dialog h3{
+  text-align: center;
+}
+.dialog .des{
+  line-height: 1.8;
+}
+.dialog .des .result li {
+  margin-top: 5px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgb(153, 153, 153);
+}
+.dialog .des .result li label{
+  font-weight: bold;
+}
+.dialog .des .close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}

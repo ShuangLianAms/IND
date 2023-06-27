@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<title>index</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <img src="img/logo.webp" alt="" class="logo" />
+    <nav>
+      <a href="##">File</a>
+      <a href="##">Edit</a>
+      <a href="##" class="show">Ideation recap</a>
+    </nav>
+    <img src="img/logo.webp" alt="" class="logo" />
+  </header>
+  <div style="display: block;" id="box1">
+  <main class="main1box">
+    <!-- 左侧内容 -->
+    <aside>
+      <section class="menu">
+        <!--菜单-->
+        <div class="navMenuBox">
+          <!--一级菜单-->
+          <ul class="navMenu">
+            <!--菜单项-->
+            <li>
+              <a href="##" class="arrow" style="border-top:none">
+                <i>+</i> Aim
+              </a>
+              <ul class="subMenu">
+                <li id="1"><a href="##">Topic</a></li>
+                <li id="2"><a href="##">Goal</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="##" class="arrow">
+                <i>+</i> Audience
+              </a>
+              <ul class="subMenu">
+                <li id="3"><a href="##">Audience</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="##" class="arrow">
+                <i>+</i> Content
+              </a>
+              <ul class="subMenu">
+                <li id="4"><a href="##">Form</a></li>
+                <li id="5"><a href="##">Interaction complexity</a></li>
+                <li id="6"><a href="##">Media</a></li>
+                <li id="7"><a href="##">Articulation Techniques</a></li>
+                <li id="8"><a href="##">Structure</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </section>
+      <section class="des" id="des">
+        <h3>Quick Story Recap:</h3>
+        <ul class="result">
+          <li>Topic:<span id="answer1"></span></li>
+          <li>Goal:<span id="answer2"></span></li>
+          <li>Audience:<span id="answer3"></span></li>
+          <li>Form:<span id="answer4"></span></li>
+          <li>Interaction complexity:<span id="answer55"></span></li>
+
+          <li>Media:<span id="answer5"></span></li>
+          <li>Articulation Techniques:<span id="answer6"></span></li>
+          <li>Structure:<span id="answer7"></span></li>
+          <!-- <li>Range of complexity:<span id="answer8"></span></li>
+          <li>Notes:<span id="answer9"></span></li> -->
+        </ul>
+      </section>
+    </aside>
+    <!-- 右侧内容 -->
+    <section class="mainright">
+
+      <section class="box box1" style="display: block;">
+        <section class="description">
+          What is the name of your story? Having a preliminary title can assist you in commencing your narrative. Of
+          course, you will be able to change the title later.
+        </section>
+        <section class="main1">
+          <p>Aim >> Topic</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>What is your Topic?</h2>
+              <input type="text" id="input1">
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="box box2">
+        <section class="description">
+          What is the goal? What is your story trying to achieve? Here you can make multiple choices by using Ctrl +
+          left click.
+        </section>
+        <section class="main1">
+          <p>Aim >> Goal</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>What is your goal of this story?</h2>
+              <select id="select1" multiple="multiple">
+                <option value="Persuasion">Persuasion</option>
+                <option value="Negotiation">Negotiation</option>
+                <option value="Inquiry">Inquiry</option>
+                <option value="Deliberation">Deliberation</option>
+                <option value="Information seeking">Information seeking</option>
+                <option value="Education">Education</option>
+              </select>
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="box box3">
+        <section class="description">
+          Please provide the essential information about your target audience, which will help to tailor your content
+          more effectively. Please take a moment to respond to the following questions.
+        </section>
+        <section class="main1">
+          <p>Audience >> Audience description</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>what is the covering age range of your target audience?</h2>
+              <input type="number" id="num1" class="ch" min="0" max="99">-
+              <input type="number" id="num2" class="ch" min="0" max="99">
+              <h2>What is the educational level of your target audience?</h2>
+              <!-- 这里要多选 -->
+              <select id="select10" multiple="multiple" style="height: 100px">
+                <option value="Early childhood education">Early childhood education</option>
+                <option value="Primary education">Primary education</option>
+                <option value="secondary education">secondary education</option>
+                <option value="Bachelor’s or equivalent level">Bachelor’s or equivalent level</option>
+                <option value="Master’s or equivalent level">Master’s or equivalent level</option>
+                <option value="Phd’s or equivalent level">Phd’s or equivalent level, Not classified
+                </option>
+                <option value="Not classified">Not classified</option>
+              </select>
+              <h2>What is the conceptual background of your target audience?</h3>
+                <input type="text" id="input2">
+                <h2>what your audience want?</h3>
+                  <input type="text" id="input3">
+                  <h2>what your audience needs?</h3>
+                    <input type="text" id="input4">
+                    <h2>what is the intentions?</h3>
+                      <input type="text" id="input5">
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="box box4">
+        <section class="description">
+          Which form will you use? This will affect the media form you will have to choose later.
+        </section>
+        <section class="main1">
+          <p>Content >> Form</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>Please choose the form of the story</h2>
+              <select id="select2">
+                <option value="mono">mono</option>
+                <option value="multi">multi</option>
+              </select>
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!-- add -->
+      <section class="box box5">
+        <section class="description">
+          What is the intricacy and depth of your narrative? Are there numerous intertwined plotlines, a large cast of
+          characters, or complex themes? Or is it a more straightforward tale with a single narrative thread and a few
+          key characters? Understanding your story's complexity allows the system to help you better engage with your
+          target audience.
+        </section>
+        <section class="main1">
+          <p>Content >> Interaction complexity</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>what is the complexity of your story?</h2>
+              <select id="select55">
+                <option value="simple">simple</option>
+                <option value="complicated">complicated</option>
+                <option value="complex">complex</option>
+              </select>
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="box box6">
+        <section class="description">
+          What is the format or medium in which your story will be delivered? For instance, will it be a written text,
+          an audio recording, a video, or perhaps a combination of these? Identifying the media form can greatly
+          influence how the story is constructed and presented, thus shaping the overall storytelling experience for
+          your audience. If the story form is multi, you can make multiple choices using Ctrl + left click.
+        </section>
+        <section class="main1">
+          <p>Content >> Media</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>what is the media form of the story?</h2>
+              <select id="select3">
+                <option value="text">text</option>
+                <option value="visual">visual</option>
+                <option value="audio">audio</option>
+              </select>
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="box box7">
+        <section class="description">
+          What are the articulation techniques of your story? The chosen techniques can significantly shape the delivery
+          and impact of your story, and your answers will guide subsequent questions tailored specifically to the
+          techniques you've selected.
+        </section>
+        <section class="main1">
+          <p>Content >> Media</p>
+          <section class="main2">
+            <section class="mcontent">
+              <h2>what is the articulation techniques</h2>
+              <select id="select4">
+                <option value="non-fiction">non-fiction</option>
+                <option value="Historical-fiction">Historical-fiction</option>
+                <option value="fiction">fiction</option>
+                <option value="performance">performance</option>
+              </select>
+              <!-- -如果用户选择non-fiction, 系统询问问题2：“Please choose the non-fiction type“ -->
+              <div class="j-media cur">
+                <h2>Please choose the non-fiction type</h2>
+                <select id="select5">
+                  <option value="biography">biography</option>
+                  <option value="journalism">journalism</option>
+                  <option value="transcript poetry">transcript poetry</option>
+                  <option value="historiography">historiography</option>
+                </select>
+              </div>
+
+              <!-- -如果用户选择Historical-fiction, 系统询问问题3：“Please choose the historical-fiction type“ -->
+              <div class="j-media hide">
+                <h2>Please choose the historical-fiction type</h2>
+                <select id="select6">
+                  <option value="anecdote">anecdote</option>
+                  <option value="myth">myth</option>
+                  <option value="legend">legend</option>
+                  <option value="history">history</option>
+                </select>
+              </div>
+
+              <!-- -如果用户选择fiction, 系统询问问题4：“Please choose the fiction type“ -->
+              <div class="j-media hide">
+                <h2>Please choose the fiction type</h2>
+                <select id="select7">
+                  <option value="prose">prose</option>
+                  <option value="short story">short story</option>
+                  <option value="novels">novels</option>
+                  <option value="narrative poems">narrative poems</option>
+                </select>
+              </div>
+
+              <!-- -如果用户选择performance, 系统询问问题5：“Please choose the performance type“输入方式：下拉菜单选择 -->
+              <div class="j-media hide">
+                <h2>Please choose the performance type</h2>
+                <select id="select8">
+                  <option value="game">game</option>
+                  <option value="live">Live or Recorded Performances</option>
+
+                </select>
+              </div>
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next" href="##">Next</a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!-- add -->
+      <section class="box box8">
+        <section class="description">
+          Description of the input box7
+        </section>
+        <section class="main1">
+          <p>Content >> Structure</p>
+          <section class="main2">
+            <section class="mcontent">
+              <!-- 如果用户在页面7选择了biography,系统询问下列问题： -->
+              <section class="ques-item" id="biography">
+                <h2>Who is the subject of the biography?</h2>
+                <input type="text" id="input8">
+                <h2>What is his/her significant life events?</h2>
+                <!-- <input type="text" id="input9"> -->
+                <p class="jia jia-1 len">+</p>
+                <section class="role" id="events">
+
+                </section>
+
+                <h2>Who are the key figures involved?</h2>
+                <p class="jia jia-2">+</p>
+                <section class="role">
+
+                </section>
+
+
+                <h2 class="mb0">What personal or public conflicts did he/she face?</h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+
+                <!-- <h2>How did his/her relationships influence their life?</h2>
+                <input type="text" id="input15"> -->
+
+                <h2>How did he/she overcome these conflicts?</h2>
+                <input type="text" id="input16">
+
+                <!-- <h2>What were the turning points in the subject's life?</h2>
+                <input type="text" id="input17"> -->
+
+                <h2>What are the cultural, historical, or social contexts surrounding their life?</h2>
+                <input type="text" id="input18">
+                <h2>How did he/she impact or were impacted by the world around them?</h2>
+                <input type="text" id="input19">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input17">
+              </section>
+              <!--如果用户在页面7选择了Journalism系统询问下列问题： -->
+              <section class="ques-item" id="journalism">
+                <h2>What is the central event or issue?</h2>
+                <input type="text" id="input8">
+                <h2 class="mb0">Who are the key figures involved?</h2>
+                <p class="jia len">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What is the timeline of event?</h2>
+                <input type="date" id="input15"> -- <input type="date" id="input15-1">
+                <h2>Where does the event happen?</h2>
+                <input type="text" id="input16">
+                <h2>What are the underlying causes of the event/issue?</h2>
+                <p class="jia cause">+</p>
+                <section class="role">
+
+                </section>
+                <!-- <input type="text" id="input17"> -->
+
+                <h2>What are the potential future implications?</h2>
+                <input type="text" id="input17">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input17">
+
+              </section>
+              <!--如果用户在页面7选择了Transcript Poetry系统询问下列问题： -->
+              <section class="ques-item" id="transcriptpoetry">
+                <h2>What event or speech is being transcribed into poetry?</h2>
+                <input type="text" id="input8">
+                <h2>How does the event or speech's content influence the poem's themes?</h2>
+                <input type="text" id="input8">
+                <h2>How do you plan to preserve the original tone or emotion in the poem?</h2>
+                <input type="text" id="input8">
+                <h2>What creative liberties might you take during transcription?</h2>
+                <input type="text" id="input8">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input8">
+
+
+              </section>
+              <!---如果用户在页面7选择了Historiography系统询问下列问题：-->
+              <section class="ques-item" id="historiography">
+                <h2>What period or event is being researched?</h2>
+                <input type="text" id="input8">
+                <h2 class="mb0">Who were the significant figures or groups?</h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What sources are being used?</h2>
+                <input type="text" id="input15">
+                <h2>How are different interpretations and perspectives handled?</h2>
+                <input type="text" id="input16">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input17">
+              </section>
+              <!---如果用户在页面7选择了Anecdote系统询问下列问题：-->
+              <section class="ques-item" id="anecdote">
+                <h2>What is the central event or situation?</h2>
+                <input type="text" id="input8">
+                <h2 class="mb0">Who are the primary individuals involved?</h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What is the humorous, surprising, or enlightening element?</h2>
+                <input type="text" id="input15">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input16">
+              </section>
+              <!---如果用户在页面7选择了Myth系统询问下列问题：-->
+              <section class="ques-item" id="myth">
+                <h2 class="mb0">Who are the gods, heroes, or creatures in the story?</h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What is the central conflict or problem?</h2>
+                <input type="text" id="input15">
+                <h2>What is the myth's moral or lesson?</h2>
+                <input type="text" id="input16">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input16">
+              </section>
+              <!---如果用户在页面7选择了Legend系统询问下列问题：-->
+              <section class="ques-item" id="legend">
+                <h2>Who is the legend about?</h2>
+                <input type="text" id="input15">
+                <h2>What feats or events are attributed to them?</h2>
+                <input type="text" id="input16">
+                <h2>How have these stories been passed down or changed over time?</h2>
+                <input type="text" id="input16">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input16">
+              </section>
+              <!---如果用户在页面7选择了History系统询问下列问题：-->
+              <section class="ques-item" id="history">
+                <h2>What is the timeline of events?</h2>
+                <input type="text" id="input8">
+                <h2 class="mb0">Who are the key historical figures involved?</h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>Is there any fictional elements? If so, how do fictional elements integrate with the historical
+                  context?</h2>
+                <input type="text" id="input15">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input16">
+              </section>
+              <!---如果用户在页面7选择了Prose系统询问下列问题：-->
+              <section class="ques-item" id="prose">
+                <h2 class="mb0">Who are the main characters? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What is the main conflict or plot?</h2>
+                <input type="text" id="input15">
+                <h2>How do the characters evolve over time? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+              </section>
+              <!---如果用户在页面7选择了Short Story系统询问下列问题：-->
+              <section class="ques-item" id="shortstory">
+                <h2>Who is the main character?</h2>
+                <input type="text" id="input15">
+                <h2>What is the central conflict or event?</h2>
+                <input type="text" id="input15">
+                <h2>How is the story resolved?</h2>
+                <input type="text" id="input15">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input15">
+              </section>
+              <!---如果用户在页面7选择了Novels系统询问下列问题：-->
+              <section class="ques-item" id="novels">
+                <h2>Who are the main characters? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What are the main conflicts or plot points? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>How do these conflicts resolve? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>How do the characters evolve over time? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input15">
+              </section>
+              <!---如果用户在页面7选择了Narrative Poems系统询问下列问题：-->
+              <section class="ques-item" id="narrativepoems">
+                <h2>What is the theme or main conflict of the poem?</h2>
+                <input type="text" id="input15">
+                <h2>What is the structure of the poem?</h2>
+                <input type="text" id="input15">
+                <h2>How do you plan to use poetic rhetorical devices and language style?</h2>
+                <input type="text" id="input15">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input15">
+              </section>
+              <!---如果用户在页面7选择了Games系统询问下列问题：-->
+              <section class="ques-item" id="game">
+                <h2>Who are the main characters or groups in the game? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What are the main conflicts or challenges in the game? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>What are the player's objectives? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+                <h2>How does the player influence the course of the story?</h2>
+                <input type="text" id="input15">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input15">
+              </section>
+              <!---如果用户在页面7选择了Live or Recorded Performances系统询问下列问题：-->
+              <section class="ques-item" id="live">
+                <h2>What is the theme or objective of the performance? </h2>
+                <input type="text" id="input15">
+
+                <h2>Who are the main characters or performers? </h2>
+                <p class="jia">+</p>
+                <section class="role">
+
+                </section>
+
+                <h2>What is the structure or timeline of the performance?</h2>
+                <input type="text" id="input15">
+                <h2>What is the role or level of audience participation?</h2>
+                <input type="text" id="input15">
+                <h2>Any notes(Free collection of ideas)?</h2>
+                <input type="text" id="input15">
+              </section>
+            </section>
+            <section class="btn">
+              <a href="##" class="prev">Prev</a>
+              <a class="next last" href="##">Finish</a>
+            </section>
+          </section>
+        </section>
+
+      </section>
+
+    </section>
+  </main>
+</div>
+  <!-- 新增页面1 -->
+  <div style="display: none;" id="box2">
+    <main class="main2box" >
+      <!-- 上半部分 -->
+      <div class="topbox">
+        <!-- 左侧第一块内容 -->
+        <section class="section1">
+          <!-- 上半部分画图模块 -->
+          <section class="top1">
+            <section class="left1">
+              <img src="img/1.jpg"width="100%" height="100%" alt="">
+            </section>
+            <!-- 这里是点击new Event按钮才出现的输入框 -->
+            <section class="right1">
+
+              <section class="box1 box1-evt">
+                <form action="##">
+                  <p>New Event Name:</p>
+                  <input type="text">
+                  <p>Description:</p>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                </form>
+                <button type="button" class="js-add1">Add</button>
+              </section>
+
+              <section class="box1 box1-per">
+                <form action="##">
+                  <p>New Person Name:</p>
+                  <input type="text">
+                  <p>Description:</p>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+                <button type="button" class="js-add2">Add</button>
+              </section>
+
+              
+
+            </section>
+          </section>
+          <!-- 时间线模块 -->
+          <section class="bot1">
+
+          </section>
+        </section>
+        <!-- 第二块内容 -->
+        <aside class="aside1">
+          <h2>Elements</h2>
+          <h4>Events:</h4>
+          <ul>
+            <li>Event 1</li>
+            <li>Event 2</li>
+            <li>Event 3</li>
+            <li>Event 4</li>
+            <li>Event 5</li>
+          </ul>
+          <p class="add j-add1">+new Event</p>
+          <h4>Person:</h4>
+          <ul>
+            <li>person 1</li>
+            <li>person 2</li>
+            <li>person 3</li>
+            <li>person 4</li>
+          </ul>
+          <p class="add j-add2">+new person</p>
+        </aside>
+        <!-- 第三块内容 -->
+        <aside class="aside2">
+          <ul>
+            <li>
+              Link
+            </li>
+            <li>
+              Break
+            </li>
+            <li>
+              Move
+            </li>
+            <li>
+              Zoom+
+            </li>
+            <li>
+              Zoom-
+            </li>
+            <li>
+              Support
+            </li>
+            <li>
+              Synonym Lookup Tool
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- 下半部分 -->
+      <div class="botbox">
+        <!-- 左半边 -->
+        <section class="left2">
+          <p>Event1:</p>
+          <p>Display Event info and description</p>
+        </section>
+        <!-- 右半边 -->
+        <section class="right2">
+          <p>Reference:</p>
+          <p>1).Reference 1...</p>
+          <p>2).Reference 1...</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- 新增页面2 -->
+  <div style="display: none;" id="box3">
+    <main class="main2box" >
+      <!-- 上半部分 -->
+      <div class="topbox">
+        <!-- 左侧第一块内容 -->
+        <section class="section1">
+          <!-- 上半部分画图模块 -->
+          <section class="top1">
+            <section class="left1">
+              <img src="img/2.jpg" width="100%" height="100%" alt="">
+            </section>
+            <!-- 这里是点击new Event按钮才出现的输入框 -->
+            <section class="right1">
+
+              <section class="box1 box1-evt">
+                <form action="##">
+                  <p>New Event Name:</p>
+                  <input type="text">
+                  <p>Description:</p>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+                <button type="button" class="js-add1">Add</button>
+              </section>
+
+              <section class="box1 box1-per">
+                <form action="##">
+                  <p>New Person Name:</p>
+                  <input type="text">
+                  <p>Description:</p>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+                <button type="button" class="js-add2">Add</button>
+              </section>
+
+            </section>
+
+          </section>
+          <!-- 时间线模块 -->
+          <section class="bot1">
+
+          </section>
+        </section>
+        <!-- 第二块内容 -->
+        <aside class="aside1">
+          <h2>Elements</h2>
+          <h4>Events:</h4>
+          <ul>
+            <li>Central Event</li>
+            <li>Sub event</li>
+          </ul>
+          <p class="add">+new Event</p>
+          <h4>Causes:</h4>
+          <ul>
+            <li>Cause 1</li>
+            <li>Cause 2</li>
+          </ul>
+          <p class="add j-add1">+new Cause</p>
+          <h4>Person:</h4>
+          <ul>
+            <li>Person 1</li>
+            <li>Person 2</li>
+            <li>Person 3</li>
+            <li>Person 4</li>
+          </ul>
+          <p class="add j-add2">+new Person</p>
+          <h4>Result:</h4>
+          <ul>
+            <li>Edit result</li>
+            <li>Edit future implications</li>
+          </ul>
+        </aside>
+        <!-- 第三块内容 -->
+        <aside class="aside2">
+          <ul>
+            <li>
+              Link
+            </li>
+            <li>
+              Break
+            </li>
+            <li>
+              Move
+            </li>
+            <li>
+              Zoom+
+            </li>
+            <li>
+              Zoom-
+            </li>
+            <li>
+              Support
+            </li>
+            <li>
+              Synonym Lookup Tool
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- 下半部分 -->
+      <div class="botbox">
+        <!-- 左半边 -->
+        <section class="left2">
+          <p>Central event:</p>
+          <p>Display Event info and description</p>
+        </section>
+        <!-- 右半边 -->
+        <section class="right2">
+          <p>Reference:</p>
+          <p>1).Reference 1...</p>
+          <p>2).Reference 1...</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- 这里是左上角的菜单弹窗 -->
+  <div class="dialog">
+    <section class="des">
+      <span class="close">X</span>
+      <div id="result">
+        
+      </div>
+      
+    </section>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>
